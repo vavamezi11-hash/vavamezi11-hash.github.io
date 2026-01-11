@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    /*ligne suivant a replacer par "background: #0d1117;" si vous aimez pas :( */
+    background : radial-gradient(circle at center, #1f2937, #0d1117);
+}
+
+header {
+    background: #111827;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #1f2937;
+    padding: 10px;
+    justify-content: center;
+}
+nav button {
+    color: white;
+    background: #374151;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+nav button:hover {
+    background: #4b5563;
+}
+section {
+    display: none;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+}
+section.active {
+    display: block;
+}
+/* supprimer le code de la linge 48 a 50 si vous aimez pas la police d'écriture (Oswald) */
+p { 
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+}
+.album-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.titre-album {
+    font-family: Arial, sans-serif;
+}
+.titre-accueil {
+    color : red;
+    font-size : 2rem;
+    text-transform: uppercase;
+}
