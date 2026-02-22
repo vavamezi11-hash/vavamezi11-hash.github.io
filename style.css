@@ -1,25 +1,47 @@
-body{
-    background-color: rgb(25, 25,55);
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Tiny5&display=swap');
+
+body {
+    font-family: 'Tiny5', 'Jersey 10', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    background-image: url("stacked-steps-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
-
-h1{
-    color : aqua;
-    text-transform: uppercase;
-    text-align: center;
+.Logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
 
 }
-
-p{
-    font-size : 20px;
-    color :aliceblue
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
-a{
-    color : white;
-    font-size : 25px;
-    text-align: center;
-    margin-left: 45%;
-    text-decoration: none;
+.bouton_mecontacter {
+    background-color: #033468;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
+.bouton_mecontacter:hover {
+    background-color: #0056b3;
+    scale : 1.05;
+}
 
+.bouton_mecontacter:active {
+    background-color: #002d66;
+    scale : 0.93;
+}
