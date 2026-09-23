@@ -1,47 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Tiny5&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    font-family: 'Tiny5', 'Jersey 10', sans-serif;
-    color: white;
-    margin: 0;
-    padding: 20px;
-    background-image: url("stacked-steps-haikei.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+   min-height: 100vh;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #06273d;
+   font-family: 'Montserrat', sans-serif;
+   
+}
+.button {
+   background-color: #19217b;       
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 12px;
+   transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.button:hover {
+   background-color: #0f1450;
+}
+.button:active{
+   background-color: #080a28;
+   
+}
+input[type=text] {
+   width: 98%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 2px solid #19217b;
+   border-radius: 4px;
+   background-color: #0f1450;
+   color: white;
+}
+input[type=password] {
+   width: 98%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 2px solid #19217b;
+   border-radius: 4px;
+   background-color: #0f1450;
+   color: white;
 
 }
-.Logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-left: 20px;
-    position: absolute;
-
+input{
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
 }
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+p{
+   color: white;
+   font-size: 16px;
 }
-.bouton_mecontacter {
-    background-color: #033468;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+.login-container {
+   box-sizing: border-box;
+   background-color: #0b0f3c;
+   padding: 20px;
+   border-radius: 10px;
+   width: min(340px, calc(100% - 32px));
 }
-
-.bouton_mecontacter:hover {
-    background-color: #0056b3;
-    scale : 1.05;
+.credit {
+   color: white;
+   font-size: 10px;
+   bottom: 1px;
 }
-
-.bouton_mecontacter:active {
-    background-color: #002d66;
-    scale : 0.93;
+a{
+   color : rgb(16, 134, 134);
 }
